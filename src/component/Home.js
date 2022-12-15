@@ -43,8 +43,7 @@ export default class Home extends Component{
   render() {
     
     return (
-      <div>
-        <h1>Hello</h1>
+      <div className='home'>
         {/* <button onClick={this.onClick}>Try</button> */}
         <Modal show={this.state.show} handleClose={this.hideModal}>
           <table>
@@ -54,7 +53,7 @@ export default class Home extends Component{
             </tr>
           </table>
         </Modal>
-        <button type="button" onClick={this.showModal}>
+        <button className='btn-detect' type="button" onClick={this.showModal}>
           Open
         </button>
         <h2>{this.state.os}</h2>
