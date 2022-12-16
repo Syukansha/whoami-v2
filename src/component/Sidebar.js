@@ -4,11 +4,9 @@ import {BsFillPhoneFill} from 'react-icons/bs';
 // @flow
 const Sidebar = () =>{
     return(
-        <div className="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-gray-900 text-white shadow-lg">
-
-            <a href='/Home'><SidebarIcon icon={<FaFire size="28"/>}/></a>
-          
-            <a href='/about'><SidebarIcon icon={<BsFillPhoneFill size="28"/>}/></a>
+        <div className="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col text-white shadow-2xl">
+            <a href='/'><SidebarIcon icon={<FaFire size="28"/>}/></a>
+            <a href='/detect'><SidebarIcon icon={<BsFillPhoneFill size="28"/>}/></a>
         </div>
     )
 }
