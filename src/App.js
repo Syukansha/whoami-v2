@@ -6,11 +6,13 @@ import About from './component/about';
 import Home from './component/Home';
 import Sidebar from './component/Sidebar';
 
+import Map from "./component/Map";
+
 
 function App() {
   
   return (
-    <div className="flex h-screen bg-gray-900 ">
+    <div className="flex h-screen bg-gray-900">
       <Sidebar/>
       <BrowserRouter>
         <Routes>
@@ -18,7 +20,9 @@ function App() {
             <Route path="/detect" element={<Detect />}/>
             <Route path="/about" element={<About />}/>
         </Routes>
+        
       </BrowserRouter>
+      
    
     </div>
   )
